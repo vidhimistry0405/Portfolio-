@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Vidhi Mistry — Chemical Engineer</title>
+<meta name="description" content="Chemical engineer. Green hydrogen, industrial water treatment, membrane separations. MEng Chemical Engineering Leadership, University of Illinois Urbana-Champaign.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0C171B;--raise:#132429;--line:#223C43;--soft:#1B3037;
+--text:#EAF2F1;--muted:#8FA8A7;--dim:#6B8483;--copper:#D08F4C;--copperd:#8A5F34;
+--measure:62ch;--pad:clamp(1.15rem,5vw,5rem);--max:80rem}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ink);color:var(--text);overflow-x:hidden;
+font:400 1.0625rem/1.72 "IBM Plex Serif",Georgia,serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"IBM Plex Sans",system-ui,sans-serif}
+.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+a{color:inherit}img{max-width:100%;display:block}
+a:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+
+.bar{position:sticky;top:0;z-index:20;display:flex;gap:1.5rem;align-items:center;padding:.8rem var(--pad);
+background:rgba(12,23,27,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--soft)}
+.bar b{font-family:"IBM Plex Sans",sans-serif;font-weight:600;letter-spacing:-.01em}
+.bar nav{margin-left:auto;display:flex;gap:1.15rem;font-family:"IBM Plex Sans",sans-serif;font-size:.88rem}
+.bar nav a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;padding:.2rem 0}
+.bar nav a:hover{color:var(--text);border-bottom-color:var(--copper)}
+@media (max-width:700px){.bar nav a.opt{display:none}}
+
+section{padding:clamp(3.25rem,7vw,6rem) var(--pad);max-width:var(--max);margin:0 auto;scroll-margin-top:4.5rem}
+section+section{border-top:1px solid var(--soft)}
+h2{font-size:1.55rem;font-weight:600;letter-spacing:-.02em;margin:0 0 2.75rem;
+padding-bottom:.75rem;border-bottom:1px solid var(--line)}
+
+.hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);
+align-items:center;padding-bottom:clamp(2.5rem,5vw,4rem)}
+.hero h1{font-size:clamp(2.9rem,8.4vw,5.4rem);line-height:.93;letter-spacing:-.045em;font-weight:700;margin:0 0 1.4rem}
+.hero h1 i{display:block;font-style:normal;color:var(--copper)}
+.tagline{font-family:"IBM Plex Sans",sans-serif;font-size:clamp(1.05rem,2.1vw,1.32rem);
+line-height:1.45;max-width:30ch;margin:0 0 1.4rem}
+.bio{color:var(--muted);max-width:var(--measure);margin:0 0 2rem;font-size:1rem}
+.stage{margin:0;border:1px solid var(--line);background:linear-gradient(165deg,#12242A,#0B1518);position:relative}
+.stage canvas{display:block;width:100%;height:auto;touch-action:pan-y;cursor:grab}
+.stage canvas:active{cursor:grabbing}
+.stage figcaption{font-family:"IBM Plex Sans",sans-serif;font-size:.78rem;color:var(--dim);
+padding:.75rem .9rem;line-height:1.5;border-top:1px solid var(--line)}
+.stage .key{position:absolute;top:.7rem;left:.8rem;font-family:"IBM Plex Mono",monospace;font-size:.7rem;line-height:1.9}
+.stage .key i{font-style:normal;display:block;color:var(--muted)}
+.stage .key i b{display:inline-block;width:.55rem;height:.55rem;margin-right:.45rem;border-radius:50%}
+.portrait{margin:0;border:1px solid var(--line);padding:.5rem;background:var(--raise)}
+.portrait img{width:100%;filter:saturate(.92) contrast(1.03)}
+.portrait figcaption{font-family:"IBM Plex Sans",sans-serif;font-size:.78rem;color:var(--dim);padding:.6rem .3rem 0;line-height:1.45}
+@media (max-width:820px){.hero{grid-template-columns:1fr;gap:2.25rem}.portrait{max-width:18rem}}
+
+.measures{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line);
+grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))}
+.measure{background:var(--ink);padding:1.5rem clamp(1.15rem,3vw,1.9rem);text-decoration:none;color:inherit;display:block}
+.measure:hover{background:var(--raise)}
+.measure .v{display:block;font-size:1.95rem;color:var(--copper);letter-spacing:-.02em;line-height:1.1}
+.measure .c{display:block;margin-top:.65rem;font-size:.88rem;line-height:1.5;color:var(--muted);font-family:"IBM Plex Sans",sans-serif}
+
+.work{display:grid;gap:clamp(3.5rem,7vw,5.5rem)}
+.entry{scroll-margin-top:5rem}
+.ehead{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;align-items:baseline;margin-bottom:1.5rem}
+.ehead h3{font-size:1.5rem;letter-spacing:-.025em;font-weight:600;margin:0;line-height:1.22;flex:1 1 22rem}
+.ehead .when{font-family:"IBM Plex Mono",monospace;font-size:.85rem;color:var(--copper)}
+.ehead .org{flex-basis:100%;font-family:"IBM Plex Sans",sans-serif;font-size:.92rem;color:var(--muted)}
+.ebody{display:grid;grid-template-columns:minmax(0,1fr) minmax(14rem,18rem);gap:clamp(1.75rem,4vw,3rem);align-items:start}
+@media (max-width:1024px){.ebody{grid-template-columns:1fr}}
+.entry ul{margin:0;padding:0;list-style:none;max-width:var(--measure)}
+.entry li{position:relative;padding-left:1.1rem;margin-bottom:.8rem}
+.entry li::before{content:"";position:absolute;left:0;top:.74em;width:6px;height:1px;background:var(--copperd)}
+
+.rail{border:1px solid var(--line);background:var(--raise);padding:1.3rem 1.4rem}
+.rail h4{font-family:"IBM Plex Sans",sans-serif;font-size:.8rem;font-weight:600;color:var(--dim);margin:0 0 1.1rem}
+.rail dl{margin:0}
+.rail dt{font-family:"IBM Plex Mono",monospace;font-size:.97rem;color:var(--copper);margin-bottom:.3rem;line-height:1.35}
+.rail dd{margin:0 0 1.15rem;font-family:"IBM Plex Sans",sans-serif;font-size:.85rem;line-height:1.55;color:var(--muted)}
+.rail dd:last-child{margin-bottom:0}
+
+figure.proof{margin:2rem 0 0;border:1px solid var(--line);background:#fff}
+figure.proof img{width:100%}
+figure.proof figcaption{background:var(--raise);color:var(--muted);font-family:"IBM Plex Sans",sans-serif;
+font-size:.85rem;line-height:1.55;padding:.85rem 1.1rem;border-top:1px solid var(--line)}
+
+.evidence{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1rem}
+.ev{background:var(--raise);border:1px solid var(--line);padding:1.4rem}
+.ev h3{font-size:.95rem;font-weight:600;margin:0 0 .45rem}
+.ev .tag{font-family:"IBM Plex Mono",monospace;font-size:.77rem;color:var(--copper);display:block;margin-bottom:.85rem}
+.ev p{margin:0 0 .75rem;font-size:.95rem;color:var(--muted);line-height:1.6}
+.ev a{font-family:"IBM Plex Sans",sans-serif;font-size:.85rem;color:var(--copper);text-decoration:none;border-bottom:1px solid var(--copperd)}
+.ev a:hover{color:var(--text);border-bottom-color:var(--text)}
+
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:1.75rem}
+.quote{border-left:2px solid var(--copper);padding:.2rem 0 .2rem 1.5rem}
+.quote blockquote{margin:0 0 1rem;font-size:1.08rem;line-height:1.65}
+.quote .by{font-family:"IBM Plex Sans",sans-serif;font-size:.88rem;margin:0}
+.quote .by span{display:block;color:var(--dim);font-size:.83rem;margin-top:.15rem}
+
+.roles{border-top:1px solid var(--soft)}
+.role{display:grid;grid-template-columns:10.5rem minmax(0,1fr) 9rem;gap:1.25rem;padding:1.3rem 0;
+border-bottom:1px solid var(--soft);align-items:baseline}
+.role .when{font-family:"IBM Plex Mono",monospace;font-size:.85rem;color:var(--dim)}
+.role .what{font-family:"IBM Plex Sans",sans-serif}
+.role .what b{font-weight:600;display:block}
+.role .what span{color:var(--muted);font-size:.9rem}
+.role .where{font-family:"IBM Plex Sans",sans-serif;font-size:.85rem;color:var(--dim);text-align:right}
+@media (max-width:760px){.role{grid-template-columns:1fr;gap:.25rem}.role .where{text-align:left}}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem}
+.group h3{font-size:.92rem;font-weight:600;margin:0 0 .85rem}
+.group ul{margin:0;padding:0;list-style:none;font-family:"IBM Plex Sans",sans-serif;font-size:.9rem;line-height:1.8;color:var(--muted)}
+.deg{margin-bottom:1.6rem}
+.deg b{font-family:"IBM Plex Sans",sans-serif;font-weight:600;display:block}
+.deg span{color:var(--muted);font-size:.93rem}
+
+.contact{display:flex;flex-wrap:wrap;gap:.85rem}
+.btn{font-family:"IBM Plex Sans",sans-serif;font-size:.92rem;text-decoration:none;padding:.72rem 1.25rem;
+border:1px solid var(--line);color:var(--text)}
+.btn:hover{border-color:var(--copper);background:var(--raise)}
+.btn.p{border-color:var(--copper);color:var(--copper)}
+.btn.p:hover{background:var(--copper);color:var(--ink)}
+footer{padding:2.5rem var(--pad) 4rem;color:var(--dim);font-size:.82rem;font-family:"IBM Plex Sans",sans-serif;
+border-top:1px solid var(--soft);max-width:var(--max);margin:0 auto}
+#err{padding:4rem var(--pad);max-width:var(--measure)}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <b>Vidhi Mistry</b>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#evidence" class="opt">Evidence</a>
+    <a href="#experience" class="opt">Experience</a>
+    <a href="#skills" class="opt">Skills</a>
+    <a href="resume.pdf">Résumé</a>
+  </nav>
+</div>
+
+<!--DATA:START-->
+<script type="application/json" id="portfolio-data">{"identity":{"name":"Vidhi Mistry","headline":"Chemical Engineering | Materials & Process R&D | Experimental Testing & Analysis","location":"Champaign, Illinois, United States","email":"vmist@illinois.edu","phone":"+1 (217) 607-4009","linkedin":"https://www.linkedin.com/in/vidhi-k-mistry-79a653334","github":null,"site":null},"site":{"tagline":"Chemical engineer working on green hydrogen, industrial water treatment and membrane separations.","bio":"Master of Engineering candidate at the University of Illinois Urbana-Champaign. I work between the bench and the model — building and testing physical systems, then using data to decide what to build next. Patent application filed on a hydrogen production method using industrial waste.","scene":{"caption":"CO₂ and CH₄ meeting a polymer membrane. The smaller, more soluble CO₂ passes; CH₄ is largely retained. Predicting that separation is what the modelling work below does. Drag to rotate."},"figures":{"membrane-ml":[{"src":"assets/membrane-model.png","alt":"Modelling pipeline and performance: SMILES input, Morgan fingerprints, physics-guided descriptors, leakage-free split, parity plots and five-fold cross-validation","caption":"The full project poster. Random Forest baseline R² 0.820, XGBoost R² 0.828, both at RMSE 0.285, with five-fold GroupKFold cross-validation across polymer groups."},{"src":"assets/presenting.jpg","alt":"Vidhi Mistry presenting the membrane modelling results at a departmental talk","caption":"Presenting the feature importance results, spring 2026."}],"nirma-ccr":[{"src":"assets/h2-reactor.jpg","alt":"Transparent acrylic photo-electrocatalytic reactor housing with gas vents and electrode ports","caption":"The reactor housing, designed in AutoCAD and externally fabricated — two gas vents and dedicated ports for the electrode connections."},{"src":"assets/h2-setup.jpg","alt":"The photo-electrocatalytic cell running on the bench with tubing and electrical connections","caption":"The cell running on the bench. Hydrogen was collected at the cathode and quantified by water displacement."}],"nirma-wastewater":[{"src":"assets/wastewater-samples.jpg","alt":"Four beakers showing dye-intermediate effluent from dark brown raw wastewater through progressively clearer treated fractions","caption":"Dye-intermediate effluent, raw through treated. The untreated wastewater entered at pH 2–3 and a chemical oxygen demand of 32,000 mg/L."}]},"documents":[{"name":"Green hydrogen project poster","note":"Studies on the Production of Green Hydrogen — Nirma University, Department of Chemical Engineering. Co-authored with Harvin Patel, guided by Dr. Leena Bora.","url":"assets/green-hydrogen-poster.pdf","label":"Open the poster (PDF)"}],"recommendations":[],"credentials":[{"name":"Leading Teams: Developing as a Leader","issuer":"University of Illinois Urbana-Champaign, via Coursera","date":"Oct 2025","note":"Credential ID FP9BNOMTH592"},{"name":"Leading Teams: Building Effective Team Cultures","issuer":"University of Illinois Urbana-Champaign, via Coursera","date":"Oct 2025","note":"Credential ID KAMGJQ33D2Y1"},{"name":"Business Strategy","issuer":"University of Illinois Urbana-Champaign, via Coursera","date":"Mar 2026","note":"Completed with honors"},{"name":"Six Sigma Green Belt","issuer":"LinkedIn Learning","date":"Dec 2025","note":""}]},"recommendations":[],"featured":["nirma-ccr","membrane-ml","nirma-wastewater","uiuc-gra-shukla"],"highlights":[{"bullet":"ccr-b3","value":"1.3 V","caption":"applied potential for hydrogen production, below the 1.6-2.2 V practical range of commercial electrolyzers"},{"bullet":"ccr-b1","value":"~15%","caption":"higher hydrogen generation efficiency than electrolysis alone"},{"bullet":"mem-b4","value":"0.828","caption":"R² predicting membrane selectivity on polymers the model had never seen"},{"bullet":"ww-b4","value":"100 mg/L","caption":"chemical oxygen demand after treatment, down from the thousands"}],"roles":[{"id":"uiuc-gra-shukla","org":"University of Illinois Urbana-Champaign","title":"Graduate Research Assistant","name":null,"location":"Urbana-Champaign, IL","start":"2026-05","end":null,"context":"Shukla Group, Department of Chemical & Biomolecular Engineering; supporting a PhD student's research on molecular toxicity prediction and PFAS-polymer interactions.","bullets":[{"id":"shukla-b1","text":"Assisted in developing machine learning models to identify safer, biodegradable alternatives to PFAS by predicting molecular toxicity, reducing the experimental effort required for chemical screening.","metric":null,"method":"molecular machine learning for toxicity prediction"},{"id":"shukla-b2","text":"Worked on a team building an end-to-end molecular machine learning workflow in PyTorch, covering data preparation, model training, cross-validation and testing on unseen data.","metric":null,"method":"PyTorch; cross-validated model development"},{"id":"shukla-b3","text":"Applied MolFormer, a pretrained transformer model, to generate molecular representations directly from chemical structures.","metric":null,"method":"MolFormer pretrained transformer"},{"id":"shukla-b4","text":"Analyzed molecular feature spaces using dimensionality reduction (PCA and t-SNE).","metric":null,"method":"PCA, t-SNE on learned embeddings"},{"id":"shukla-b5","text":"Investigated PFAS-polymer interactions using molecular dynamics simulations run on the Folding@home distributed computing platform, evaluating polymer materials for potential PFAS removal from wastewater.","metric":null,"method":"molecular dynamics on the Folding@home distributed computing platform"},{"id":"shukla-b6","text":"Curated molecular datasets and evaluated toxicity predictions to guide experimental screening.","metric":null,"method":"dataset curation and model validation"},{"id":"shukla-b7","text":"Benchmarked learned molecular representations against standard fingerprint baselines.","metric":null,"method":"comparative benchmarking of learned embeddings vs fingerprint baselines"}]},{"id":"uiuc-gra-ripe","org":"University of Illinois Urbana-Champaign","title":"Graduate Research Assistant, RIPE Project","name":null,"location":"Urbana-Champaign, IL","start":"2026-06","end":null,"context":"Controlled-environment soybean research; laboratory and greenhouse technical support across multiple treatment groups.","bullets":[{"id":"ripe-b1","text":"Authored 8+ Standard Operating Procedures and safety documentation covering autoclave operation, equipment sterilization and experimental procedures, standardizing laboratory practice across the group.","metric":"8+ SOPs","method":"SOP authoring"},{"id":"ripe-b2","text":"Analyzed soybean phenotyping datasets in R to evaluate Water Use Efficiency and prepared results for research reporting.","metric":null,"method":"statistical analysis in R"},{"id":"ripe-b3","text":"Prepared chemical solutions for sterilizing laboratory and greenhouse equipment and carried out autoclave sterilization for a 192-plant soybean study across multiple treatment groups.","metric":"192 plants","method":"sterilant solution preparation; autoclave sterilization"},{"id":"ripe-b4","text":"Coordinated sample labeling, tracking and experimental documentation across multiple research groups and treatment conditions.","metric":null,"method":"sample tracking and documentation control"},{"id":"ripe-b5","text":"Researched and recommended sustainable experimental materials, Turface in place of plastic beads to reduce soil moisture loss and PET thermal-transfer labels for durable plant identification, both subsequently implemented in the greenhouse.","metric":null,"method":"materials sourcing and evaluation"},{"id":"ripe-b6","text":"Worked in a cleanroom environment, following contamination-control and laboratory safety protocols throughout experimental work.","metric":null,"method":"contamination control; laboratory safety protocols"},{"id":"ripe-b7","text":"Supported day-to-day greenhouse operations and laboratory experimental work across concurrent studies.","metric":null,"method":null}]},{"id":"gnfc-trainee","org":"Gujarat Narmada Valley Fertilizers & Chemicals Ltd","title":"Process Engineering Trainee","name":null,"location":"Bharuch, Gujarat, India","start":"2024-05","end":"2024-06","context":"Large-scale fertilizer and chemicals manufacturer; assignment covered syngas production units.","bullets":[{"id":"gnfc-b1","text":"Documented Standard Operating Procedures for plant shutdown, equipment isolation, depressurization, purging and lockout-tagout, and observed a scheduled maintenance shutdown of an operating plant.","metric":null,"method":"SOP authoring"},{"id":"gnfc-b2","text":"Monitored operating parameters including temperature, pressure and flow using Distributed Control Systems under engineering supervision.","metric":null,"method":"DCS monitoring"},{"id":"gnfc-b6","text":"Applied learning-from-incident findings when documenting Standard Operating Procedures, with exposure to HAZOP preparation in an operating plant.","metric":null,"method":"learning from incident (LFI); HAZOP study exposure"},{"id":"gnfc-b3","text":"Evaluated large-scale syngas production units, including reformers, catalysts, heat exchangers and energy recovery systems, to understand process performance and operational efficiency.","metric":null,"method":null},{"id":"gnfc-b4","text":"Ensured compliance with industrial safety standards through PPE adherence, hazard identification and safe work practices in the plant.","metric":null,"method":null},{"id":"gnfc-b5","text":"Collaborated with engineering and operations teams to troubleshoot deviations and improve reliability.","metric":null,"method":null}]},{"id":"nirma-ccr","org":"Nirma University","title":"Researcher","name":null,"location":"Ahmedabad, Gujarat, India","start":"2024-12","end":"2025-05","context":"Project: \"Employment of Industrial Waste Material: Calcium Carbide Residue (CCR) as a Photocatalyst for Green Hydrogen Production\".","bullets":[{"id":"ccr-b1","text":"Filed a patent application (pending) for a novel method using industrial waste Calcium Carbide Residue as a photocatalyst, achieving approximately 15% higher hydrogen generation efficiency than electrolysis alone by combining electrolysis with photocatalysis.","metric":"~15% efficiency increase","method":"comparison against an electrolysis-only baseline"},{"id":"ccr-b2","text":"Deposited CCR catalyst onto electrodes by sol-gel method and applied a polyvinyl alcohol overcoat to prevent catalyst detachment during operation.","metric":null,"method":"sol-gel deposition; PVA binder overcoat"},{"id":"ccr-b3","text":"Produced hydrogen at an applied potential of 1.3 V, below the 1.6-2.2 V practical operating range of PEM and alkaline electrolyzers, and quantified hydrogen yield by water displacement collected at the cathode.","metric":"1.3 V applied potential vs 1.6-2.2 V practical operating range","method":"cathodic gas collection by water displacement"},{"id":"ccr-b4","text":"Designed a custom photo-electrocatalytic hydrogen production cell in AutoCAD and had it externally fabricated for experimental use.","metric":null,"method":"AutoCAD apparatus design; external fabrication"},{"id":"ccr-b5","text":"Analyzed hydrogen production across varying current and voltage conditions in MS Excel and prepared technical documentation supporting the patent filing.","metric":null,"method":"current/voltage sweep analysis in Excel"},{"id":"ccr-b6","text":"Conducted the supporting literature review using Elicit AI.","metric":null,"method":"Elicit AI literature review"}]},{"id":"nirma-wastewater","org":"Nirma University","title":"Researcher","name":null,"location":"Ahmedabad, Gujarat, India","start":"2023-07","end":"2023-09","context":"Project: \"Wastewater Treatment of Dye Intermediate Industry for Zero-Liquid Discharge\".","bullets":[{"id":"ww-b1","text":"Performed 15+ lab-scale experiments evaluating coagulant and flocculant combinations for dye-intermediate industry wastewater.","metric":"15+ experiments","method":"coagulation-flocculation screening"},{"id":"ww-b2","text":"Developed and applied modified chitosan as a biodegradable flocculant.","metric":null,"method":"biopolymer flocculant preparation"},{"id":"ww-b3","text":"Measured Chemical Oxygen Demand by the closed reflux colorimetric method and Biological Oxygen Demand by the dilution method.","metric":null,"method":"closed reflux colorimetric COD; dilution-method BOD"},{"id":"ww-b4","text":"Reduced Chemical Oxygen Demand from the thousands of mg/L to approximately 100 mg/L and Biological Oxygen Demand to approximately 30 mg/L through optimized chemical dosing.","metric":"COD thousands to ~100 mg/L; BOD ~30 mg/L","method":"chemical dosing optimization; closed reflux colorimetric COD"},{"id":"ww-b6","text":"Recommended treatment parameters and coagulant-flocculant dosages to industry representatives based on experimental results.","metric":null,"method":null},{"id":"ww-b7","text":"Presented findings at an IIChE-organized technical symposium.","metric":null,"method":null}]},{"id":"chesa-iiche-board","org":"Chemical Engineering Students' Association (ChESA) and Indian Institute of Chemical Engineers (IIChE) Student Chapter, Nirma University","title":"Board Member","name":null,"location":"Ahmedabad, Gujarat, India","start":"2023-03","end":"2024-04","context":"Student chapter leadership across two chemical engineering bodies at Nirma University.","bullets":[{"id":"board-b1","text":"Coordinated technical events, workshops and industry engagement activities across cross-functional student teams spanning marketing, sponsorship, logistics and design.","metric":null,"method":null},{"id":"board-b2","text":"Secured USD 1,000 in sponsorship funding through targeted outreach, negotiation and stakeholder coordination.","metric":"USD 1,000","method":null},{"id":"board-b3","text":"Managed task allocation, timelines and progress tracking to deliver multiple parallel activities on schedule.","metric":null,"method":null}]}],"projects":[{"id":"membrane-ml","org":"University of Illinois Urbana-Champaign","title":"Graduate Research Project","name":"AI-Assisted Physics-Guided Modelling for Carbon Capture and Gas Separation in Polymer Membranes","location":"Urbana-Champaign, IL","start":"2026-02","end":"2026-05","context":"Team project predicting gas-pair selectivity in polymer membranes to accelerate materials screening for carbon capture. Dataset drawn from published literature.","bullets":[{"id":"mem-b1","text":"Developed predictive machine learning models, Random Forest as baseline and XGBoost as the main model, combining Morgan fingerprints with physics-based gas transport and polymer descriptors to evaluate membrane selectivity across three gas pairs for carbon capture.","metric":"3 gas pairs","method":"Random Forest and XGBoost; RDKit Morgan fingerprints with physics-based descriptors"},{"id":"mem-b3","text":"Implemented GroupShuffleSplit and 5-fold GroupKFold validation grouped by polymer SMILES to ensure no polymer appearing in training was present in the test set.","metric":"80/20 train/test split","method":"GroupShuffleSplit and GroupKFold grouped by polymer SMILES"},{"id":"mem-b4","text":"Achieved R² of 0.828 and RMSE of 0.285 on a test set of polymers unseen by the model, with a 5-fold cross-validated R² of 0.665 ± 0.157.","metric":"R² = 0.828, RMSE = 0.285; CV R² = 0.665 ± 0.157","method":"evaluation on an unseen test set; 5-fold GroupKFold cross-validation"},{"id":"mem-b5","text":"Identified physics-based and polymer descriptors as the strongest predictors of selectivity in feature importance analysis, ranking above structural fingerprints, with higher-rigidity polymer structures associated with higher selectivity.","metric":null,"method":"XGBoost feature importance analysis"},{"id":"mem-b6","text":"Validated model generalization on synthetic polymer datasets unseen by the model.","metric":null,"method":"external validation on held-out synthetic datasets"},{"id":"mem-b7","text":"Documented results in a technical report and presented the work to the course.","metric":null,"method":null}]}],"education":[{"institution":"University of Illinois Urbana-Champaign","degree":"Master of Engineering in Chemical Engineering Leadership","location":"Illinois, USA","start":"2025-08","end_display":"Present","gpa":"3.86","coursework":["Fluid Dynamics","Reaction Engineering and Catalysis","Mathematical Modeling for Chemical Engineering Systems","Engineering Data Science","Engineering Leadership","Strategic Management","Managerial Accounting for Operations"]},{"institution":"Nirma University","degree":"Bachelor of Technology in Chemical Engineering","location":"Ahmedabad, Gujarat, India","start":"2021-10","end_display":"May 2025","gpa":"3.24","coursework":[]}],"publications":[{"type":"patent-application","status":"filed, pending publication and approval","title":"Employment of Industrial Waste Material: Calcium Carbide Residue (CCR) as a Photocatalyst for Green Hydrogen Production","venue":null,"date":"2025"},{"type":"conference-presentation","status":"presented","title":"Wastewater Treatment of Dye Intermediate Industry for Zero-Liquid Discharge","venue":"IIChE-organized technical symposium","date":"2023"}],"certifications":[{"name":"Six Sigma Green Belt","issuer":"LinkedIn Learning","date":"2025-12"}],"skills":{"techniques":["Sol-gel catalyst deposition","Electrode fabrication and coating","Polymer binder (PVA) overcoating","Photo-electrocatalytic hydrogen generation","Gas quantification by water displacement","Chemical Oxygen Demand analysis (closed reflux colorimetric)","Biological Oxygen Demand analysis (dilution method)","Coagulation-flocculation screening","Biopolymer flocculant preparation (modified chitosan)","Laboratory solution preparation","Autoclave sterilization","Sample labeling, tracking and experimental documentation","Molecular dynamics simulation"],"unit_operations":["Steam reforming and syngas production (plant exposure)","Heat exchange and energy recovery systems (plant exposure)","Water electrolysis and photo-electrocatalysis (bench scale)","Membrane gas separation (computational)","Wastewater coagulation-flocculation","Zero-liquid-discharge treatment schemes"],"software":["Python","R","PyTorch","XGBoost","scikit-learn","RDKit","pandas","matplotlib","PyMOL","AutoCAD","ChemCAD (coursework and course simulations)","MATLAB (coursework)","PLC Programming (coursework)","Microsoft Excel, Word, PowerPoint","Elicit AI"],"methods":["Standard Operating Procedure development","Experimental design and lab-scale screening","Chemical dosing optimization","Leakage-controlled model validation (GroupShuffleSplit, GroupKFold, held-out testing)","Molecular feature engineering (Morgan fingerprints, physics-based descriptors)","Dimensionality reduction (PCA, t-SNE)","Hyperparameter tuning and ensemble inference","Feature importance analysis","Distributed Control System monitoring (plant exposure)","Lockout-tagout, isolation, depressurization and purging procedures (plant exposure)","PPE adherence and hazard identification","HAZOP and HAZID (coursework and internship exposure)","Six Sigma (Green Belt, LinkedIn Learning)","Technical documentation and research reporting"]}}</script>
+<!--DATA:END-->
+
+<main id="app"></main>
+<noscript><div id="err"><p>This page needs JavaScript to assemble its content. The résumé is at <a href="resume.pdf">resume.pdf</a>.</p></div></noscript>
+
+<script>
+var M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmt(ym){if(!ym)return"Present";var p=ym.split("-");return M[+p[1]-1]+" "+p[0]}
+function span(e){return fmt(e.start)+" \u2013 "+(e.end?fmt(e.end):"Present")}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+(function(){
+  var d=null;
+  try{d=JSON.parse(document.getElementById("portfolio-data").textContent)}catch(e){}
+  if(!d||!d.identity){
+    document.getElementById("app").innerHTML='<div id="err"><h1>Content missing</h1>'+
+      '<p>Rebuild the page with <code>node tools/build-site.js</code>.</p></div>';return}
+  render(d);
+})();
+
+function render(d){
+  var all=d.roles.concat(d.projects),site=d.site||{},byB={};
+  all.forEach(function(e){e.bullets.forEach(function(b){byB[b.id]=e})});
+  function entry(id){return all.filter(function(e){return e.id===id})[0]}
+  function title(e){return e.name||(e.context||"").replace(/^Project:\s*/,"").replace(/^"|"\.?$/g,"")||e.title}
+  var nm=d.identity.name.split(" ");
+
+  var hero='<section class="hero"><div>'+
+    '<h1>'+esc(nm[0])+'<i>'+esc(nm.slice(1).join(" "))+'</i></h1>'+
+    '<p class="tagline">'+esc(site.tagline)+'</p>'+
+    '<p class="bio">'+esc(site.bio)+'</p>'+
+    '<div class="contact"><a class="btn p" href="resume.pdf">Résumé</a>'+
+    '<a class="btn" href="mailto:'+esc(d.identity.email)+'">Email</a>'+
+    '<a class="btn" href="https://'+esc(d.identity.linkedin.replace(/^https?:\/\//,""))+'">LinkedIn</a></div></div>'+
+    (site.scene?'<figure class="stage"><canvas id="permeation" aria-label="Animated diagram: carbon dioxide passing through a polymer membrane while methane is retained"></canvas>'+
+      '<div class="key"><i><b style="background:#D08F4C"></b>CO\u2082</i><i><b style="background:#C3D6DB"></b>CH\u2084</i></div>'+
+      '<figcaption>'+esc(site.scene.caption)+'</figcaption></figure>':'')+
+    '</section><div class="measures">'+
+    d.highlights.map(function(h){var e=byB[h.bullet];
+      return '<a class="measure" href="#'+(e?esc(e.id):"work")+'"><span class="v num">'+esc(h.value)+
+        '</span><span class="c">'+esc(h.caption)+'</span></a>'}).join("")+'</div>';
+
+  var work='<section id="work"><h2>Selected work</h2><div class="work">'+
+    d.featured.map(function(id){var e=entry(id);if(!e)return"";
+      var meas=e.bullets.filter(function(b){return b.metric&&b.method});
+      var figs=(site.figures||{})[e.id]||[];
+      return '<article class="entry" id="'+esc(e.id)+'"><div class="ehead">'+
+        '<h3>'+esc(title(e))+'</h3><span class="when num">'+esc(span(e))+'</span>'+
+        '<span class="org">'+esc(e.org)+' \u2014 '+esc(e.title)+'</span></div>'+
+        '<div class="ebody"><div><ul>'+
+        e.bullets.map(function(b){return '<li>'+esc(b.text)+'</li>'}).join("")+'</ul>'+
+        figs.map(function(f){return '<figure class="proof"><img src="'+esc(f.src)+'" alt="'+esc(f.alt)+
+          '" loading="lazy"><figcaption>'+esc(f.caption)+'</figcaption></figure>'}).join("")+'</div>'+
+        (meas.length?'<aside class="rail"><h4>Measured, and how</h4><dl>'+
+          meas.map(function(b){return '<dt>'+esc(b.metric)+'</dt><dd>'+esc(b.method)+'</dd>'}).join("")+
+          '</dl></aside>':'')+'</div></article>'}).join("")+'</div></section>';
+
+  var ev=[];
+  d.publications.forEach(function(p){ev.push({
+    t:p.type==="patent-application"?"Patent application":"Conference presentation",
+    tag:p.type==="patent-application"?p.status:p.venue+", "+p.date,p:p.title,link:null})});
+  (site.documents||[]).forEach(function(x){ev.push({t:x.name,tag:"document",p:x.note||"",
+    link:{href:x.url,label:x.label||"Open"}})});
+  (site.credentials||[]).forEach(function(c){ev.push({t:c.name,tag:c.issuer+(c.date?", "+c.date:""),
+    p:c.note||"",link:c.url?{href:c.url,label:c.label||"Verify credential"}:null})});
+  var evidence='<section id="evidence"><h2>Evidence</h2><div class="evidence">'+
+    ev.map(function(x){return '<div class="ev"><h3>'+esc(x.t)+'</h3><span class="tag">'+esc(x.tag)+'</span>'+
+      (x.p?'<p>'+esc(x.p)+'</p>':'')+
+      (x.link?'<a href="'+esc(x.link.href)+'">'+esc(x.link.label)+'</a>':'')+'</div>'}).join("")+
+    '</div></section>';
+
+  var recs=(d.recommendations||[]).length?'<section id="recommendations"><h2>Recommendations</h2><div class="quotes">'+
+    d.recommendations.map(function(r){return '<div class="quote"><blockquote>'+esc(r.quote)+'</blockquote>'+
+      '<p class="by">'+esc(r.name)+'<span>'+esc(r.title)+'</span></p></div>'}).join("")+'</div></section>':'';
+
+  var roles=d.roles.slice().sort(function(a,b){return (b.start||"").localeCompare(a.start||"")});
+  var experience='<section id="experience"><h2>Experience</h2><div class="roles">'+
+    roles.map(function(r){return '<div class="role"><span class="when num">'+esc(span(r))+'</span>'+
+      '<span class="what"><b>'+esc(r.title)+'</b><span>'+esc(r.org)+'</span></span>'+
+      '<span class="where">'+esc(r.location)+'</span></div>'}).join("")+'</div></section>';
+
+  var skills='<section id="skills"><h2>Technical skills</h2><div class="cols">'+
+    [["Laboratory techniques","techniques"],["Unit operations","unit_operations"],
+     ["Software","software"],["Methods","methods"]].map(function(g){
+      return '<div class="group"><h3>'+g[0]+'</h3><ul>'+
+        d.skills[g[1]].map(function(s){return '<li>'+esc(s)+'</li>'}).join("")+'</ul></div>'}).join("")+
+    '</div></section>';
+
+  var education='<section id="education"><h2>Education</h2><div class="cols"><div>'+
+    d.education.map(function(e){return '<div class="deg"><b>'+esc(e.degree)+'</b><span>'+esc(e.institution)+
+      ' \u2014 '+esc(fmt(e.start))+' \u2013 '+esc(e.end_display)+' \u2014 GPA '+esc(e.gpa)+'</span></div>'}).join("")+
+    '</div><div class="group"><h3>Graduate coursework</h3><ul>'+
+    d.education[0].coursework.map(function(c){return '<li>'+esc(c)+'</li>'}).join("")+'</ul></div></div></section>';
+
+  var contact='<section id="contact"><h2>Get in touch</h2>'+
+    '<p class="tagline" style="margin-bottom:1.75rem">Open to research and process engineering roles.</p>'+
+    '<div class="contact"><a class="btn p" href="resume.pdf">Résumé \u2014 research</a>'+
+    '<a class="btn" href="assets/resume-process.pdf">Résumé \u2014 process</a>'+
+    '<a class="btn" href="mailto:'+esc(d.identity.email)+'">'+esc(d.identity.email)+'</a>'+
+    '<a class="btn" href="https://'+esc(d.identity.linkedin.replace(/^https?:\/\//,""))+'">LinkedIn</a></div></section>';
+
+  document.getElementById("app").innerHTML=hero+work+evidence+recs+experience+skills+education+contact+
+    '<footer>Page and r\u00e9sum\u00e9s are generated from one data file, so they cannot disagree.</footer>';
+  permeation();
+}
+
+/* Membrane permeation, drawn with depth-sorted spheres on a 2D canvas.
+   No library: a few hundred points project faster than any engine loads. */
+function permeation(){
+  var cv=document.getElementById("permeation"); if(!cv) return;
+  var ctx=cv.getContext("2d"), still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  var W=0,H=0,DPR=1;
+  var base=-0.95, yaw=base, pitch=0.18, dragging=false, lastX=0, lastY=0, clock=0;
+
+  function size(){
+    var r=cv.parentNode.getBoundingClientRect();
+    W=Math.max(280,r.width); H=Math.round(W*0.88);
+    DPR=Math.min(2,window.devicePixelRatio||1);
+    cv.width=W*DPR; cv.height=H*DPR; cv.style.height=H+"px";
+    ctx.setTransform(DPR,0,0,DPR,0,0);
+  }
+
+  // membrane: two staggered sheets of chain nodes in the y-z plane
+  var mem=[];
+  for(var i=-4;i<=4;i++) for(var j=-4;j<=4;j++) for(var k=0;k<2;k++)
+    mem.push({x:(k?0.18:-0.18)+(Math.random()-.5)*.05, y:i*0.26+(Math.random()-.5)*.05,
+              z:j*0.26+(Math.random()-.5)*.05, r:0.052, c:k?"#2B505C":"#37687A"});
+
+  // CO2 is linear and permeates; CH4 is bulkier and is turned back
+  function molecule(kind){
+    var y=(Math.random()-.5)*2.0, z=(Math.random()-.5)*2.0;
+    return {kind:kind, x:-2.0-Math.random()*2.2, y:y, z:z, v:0.0065+Math.random()*0.004,
+            turned:false, phase:Math.random()*6.28};
+  }
+  var mols=[],n;
+  for(n=0;n<10;n++) mols.push(molecule("co2"));
+  for(n=0;n<8;n++) mols.push(molecule("ch4"));
+
+  function atoms(m){
+    var a=[], s=Math.sin(m.phase), c=Math.cos(m.phase);
+    if(m.kind==="co2"){
+      a.push({dx:0,dy:0,dz:0,r:0.085,c:"#6E7B80"});
+      a.push({dx:0.17*c,dy:0.17*s,dz:0,r:0.075,c:"#D08F4C"});
+      a.push({dx:-0.17*c,dy:-0.17*s,dz:0,r:0.075,c:"#D08F4C"});
+    }else{
+      a.push({dx:0,dy:0,dz:0,r:0.10,c:"#6E7B80"});
+      var t=[[1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1]];
+      for(var i=0;i<4;i++) a.push({dx:t[i][0]*0.115,dy:t[i][1]*0.115,dz:t[i][2]*0.115,r:0.058,c:"#C3D6DB"});
+    }
+    return a;
+  }
+
+  function step(){
+    for(var i=0;i<mols.length;i++){
+      var m=mols[i];
+      m.phase+=0.01;
+      if(m.kind==="ch4" && !m.turned && m.x> -0.46){ m.turned=true; m.v=-Math.abs(m.v)*0.85; }
+      m.x+=m.v;
+      if(m.x>2.9 || m.x< -4.8){ var f=molecule(m.kind); for(var k in f) m[k]=f[k]; }
+    }
+  }
+
+  function project(x,y,z){
+    var cy=Math.cos(yaw), sy=Math.sin(yaw), cp=Math.cos(pitch), sp=Math.sin(pitch);
+    var X=x*cy - z*sy, Z=x*sy + z*cy, Y=y*cp - Z*sp; Z=y*sp + Z*cp;
+    var f=3.6/(4.4+Z);
+    return {sx:W/2 + X*W*0.255*f, sy:H/2 - Y*W*0.255*f, s:f, depth:Z};
+  }
+
+  function sphere(p,rad,col){
+    var r=Math.max(0.7,rad*W*0.255*p.s);
+    var g=ctx.createRadialGradient(p.sx-r*0.35,p.sy-r*0.4,r*0.1,p.sx,p.sy,r);
+    g.addColorStop(0,"#FFFFFF"); g.addColorStop(0.25,col); g.addColorStop(1,shade(col));
+    ctx.fillStyle=g; ctx.beginPath(); ctx.arc(p.sx,p.sy,r,0,6.2832); ctx.fill();
+  }
+  function shade(hex){
+    var v=parseInt(hex.slice(1),16);
+    return "rgb("+[(v>>16&255)*0.34|0,(v>>8&255)*0.34|0,(v&255)*0.34|0].join(",")+")";
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    var pts=[],i,j;
+    for(i=0;i<mem.length;i++){var q=mem[i];var p=project(q.x,q.y,q.z);p.r=q.r;p.c=q.c;pts.push(p);}
+    for(i=0;i<mols.length;i++){
+      var m=mols[i], a=atoms(m);
+      for(j=0;j<a.length;j++){
+        var p2=project(m.x+a[j].dx,m.y+a[j].dy,m.z+a[j].dz);
+        p2.r=a[j].r; p2.c=a[j].c; pts.push(p2);
+      }
+    }
+    pts.sort(function(a,b){return b.depth-a.depth});
+    for(i=0;i<pts.length;i++) sphere(pts[i],pts[i].r,pts[i].c);
+  }
+
+  var running=true;
+  function frame(){
+    if(!running) return;
+    if(!dragging){ clock+=0.0045; yaw=base+0.30*Math.sin(clock); }
+    if(!still) step();
+    draw(); requestAnimationFrame(frame);
+  }
+
+  cv.addEventListener("pointerdown",function(e){dragging=true;lastX=e.clientX;lastY=e.clientY;cv.setPointerCapture(e.pointerId)});
+  cv.addEventListener("pointermove",function(e){
+    if(!dragging)return;
+    base+=(e.clientX-lastX)*0.006; yaw=base;
+    pitch=Math.max(-0.85,Math.min(0.85,pitch+(e.clientY-lastY)*0.004));
+    lastX=e.clientX; lastY=e.clientY; if(still) draw();
+  });
+  ["pointerup","pointercancel"].forEach(function(ev){cv.addEventListener(ev,function(){dragging=false})});
+  window.addEventListener("resize",function(){size();draw()});
+  document.addEventListener("visibilitychange",function(){
+    if(document.hidden){running=false}else if(!running){running=true;frame()}
+  });
+
+  size();
+  if(still){draw()} else {frame()}
+}
+</script>
+</body>
+</html>
